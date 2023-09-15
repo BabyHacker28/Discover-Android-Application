@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="false"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Reg_ph2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:digits="0123456789+"
+        android:ems="15"
+        android:hint="@string/ph2_re"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Reg_ph1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:digits="0123456789+"
+        android:ems="15"
+        android:hint="@string/ph1_re"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="484dp"
+        android:backgroundTint="#F44336"
+        android:padding="10sp"
+        android:selectAllOnFocus="true"
+        android:text="@string/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="50dp"
+        android:layout_marginTop="112dp"
+        android:height="48dp"
+        android:ems="15"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+    <EditText
+        android:id="@+id/Mail_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp"
+        android:ems="15"
+        android:hint="@string/mail_reg"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="316dp"
+        android:ems="15"
+        android:hint="@string/reg_pass"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
